@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Kshitij Vivan: deep teal, clear aqua, warm gold */
+    --background: 187 36% 95%;      /* #EEF6F7 */
+    --foreground: 345 69% 6%;       /* #1A0509 */
+
+    --card: 0 0% 100%;              /* #FFFFFF */
+    --card-foreground: 345 69% 6%;
+
+    --primary: 186 100% 18%;        /* #00525B from the official KV logo */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 42 98% 55%;        /* #FDB918 from the official KV logo */
+    --secondary-foreground: 345 69% 6%;
+
+    --muted: 215 25% 95%;           /* #F1F5F9 */
+    --muted-foreground: 215 16% 47%;/* #64748B */
+
+    --accent: 187 36% 95%;
+    --accent-foreground: 186 100% 18%;
+
+    --success: 142 71% 36%;         /* #16A34A */
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;          /* #F59E0B */
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;       /* #EF4444 */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;          /* #E2E8F0 */
+    --input: 214 32% 91%;
+    --ring: 186 100% 18%;
+
+    --radius: 0.5rem;
+  }
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbars for chat */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
