@@ -14,6 +14,7 @@ export const createApp = (): Express => {
   const allowedOrigins = [
     config.clientUrl,
     'https://kvlanding.macrowdigital.com',
+    'https://kvagent.macrowdigital.com',
     'http://localhost:5173',
     'http://localhost:3000'
   ].filter(Boolean);
